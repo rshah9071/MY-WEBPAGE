@@ -565,4 +565,38 @@ footer p {
     .hero-small .subtitle {
         font-size: 1rem;
     }
+}/* ---- NEW STYLES FOR HOMEPAGE ---- */
+
+body {
+    background-color: #F8F9FA; /* This makes the whole page a soft off-white */
+}
+
+.hero-section {
+    padding: 100px 0; /* Gives some space above and below your main heading */
+    text-align: center;
+    background-color: white; /* Makes this part of the page bright white */
+}
+
+.hero-section h1 {
+    color: #212529; /* Makes your main heading a deep navy blue */
+    font-weight: 700;
+    margin-bottom: 20px; /* Puts some space below the heading */
+}
+
+.hero-section p {
+    color: #6C757D; /* Makes the paragraph text a nice light gray */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #20c997; /* This is our fun teal color! */
+    color: white;
+    text-decoration: none; /* Takes away the line under the button */
+    border-radius: 5px; /* Makes the corners a little bit round */
+    margin-top: 20px; /* Puts some space above the button */
+}
+
+.cta-button:hover {
+    background-color: #17A2B8; /* Changes the button color a little when you move your mouse over it */
 }
