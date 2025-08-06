@@ -14,16 +14,20 @@
 .service-cards-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .service-card {
-    background-color: white;
-    padding: 40px 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     max-width: 300px;
+    text-align: left;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .service-card:hover {
@@ -32,7 +36,7 @@
 
 .service-card i {
     font-size: 48px;
-    color: #20c997; /* Your accent color */
+    color: #20c997;
     margin-bottom: 20px;
 }
 
@@ -44,9 +48,26 @@
 
 .service-card p {
     color: #6C757D;
-}/* Google Fonts - Import at the top */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    margin-bottom: 20px;
+}
 
+/* Style for the "Get Quote" button */
+.service-card a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #20c997;
+    text-decoration: none;
+    border: 1px solid #20c997;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-size: 16px;
+}
+
+.service-card a.button:hover {
+    background-color: #20c997;
+    color: white;
+}
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
